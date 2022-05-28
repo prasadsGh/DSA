@@ -1,0 +1,12 @@
+this notes are needed to be written in register later 
+factors-->all the number which divide the number' completelt are called factors of number'
+LCM->least or lowest common multiple
+gcd-->gratest common divisor
+is there are two numbers a and b 
+---->a*b=gcd(a,b)*lcm(a,b)
+
+factorial of n is -->n*(n-1)*(n-2)*...*1
+
+permutation --> the number of choices available considering the arragement 
+ or in simple words --<it is an arragement of available things >
+ nPr=()
