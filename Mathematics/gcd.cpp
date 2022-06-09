@@ -20,3 +20,4 @@ cout<<"The GCD is "<<gcd(a,b)<<"\n";
 
 return 0;
 }
+//remember gcd(a,b)*lcm(a,b)=(a*b)
