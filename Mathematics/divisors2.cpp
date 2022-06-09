@@ -15,15 +15,8 @@ void divisors(ll n)
     {
         if(n%i==0)
         {
-            
-            
-
-                cout<<(n/i)<<" ";
-            
-           
-
+           cout<<(n/i)<<" ";
         } 
-
     }
 }
 int main(){
