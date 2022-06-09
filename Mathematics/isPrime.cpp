@@ -9,7 +9,7 @@ bool isPrime(ll n)
     if(n%2==0 or n%3==0) return false;
     for(int i=5;i*i<=n;i+=6)
     {
-        if(n%i==0) return false;
+        if(n%i==0 or n%(i+2)==0) return false;
     }
     return true;
 }
