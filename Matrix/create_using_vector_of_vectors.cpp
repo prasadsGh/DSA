@@ -4,7 +4,7 @@ using namespace std;
 int main(){
     int m=3,n=2;
     
-//--->creating the matrix<<<---------------------
+//--->creating the matrix<<<-----------------------
 vector<vector<int>>arr;
 for(int i=0;i<m;i++)
 {
