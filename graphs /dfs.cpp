@@ -1,37 +1,43 @@
 #include <bits/stdc++.h>
 using namespace std;
-int visited[9] = {0};
 
-vector<int> graph[6];
-void dfs(int vertex)
+void dfs(vector<int> graph[], int n, int vertex, vector<int> &visited)
 {
-    if (visited[vertex] == 0)
-    {
-        visited[vertex] = 1;
-        cout << vertex << " ";
-    }
+    
 
-    //  cout<<visited[i]<<" ";
-    for (int child : graph[vertex])
+        cout << vertex << " ";
+        visited[vertex] = 1;
+    for (auto child : graph[vertex])
     {
-        if (visited[child])
-            continue;
-        dfs(child);
+
+        if (visited[child] == 0)
+        {
+            dfs(graph, n, child, visited);
+        }
     }
+    return;
 }
 int main()
 {
-
-    int n = 8, e = 5;
-    for (int i = 1; i < 6; i++)
+    cout << "enter the number of vertices ";
+    cout << endl;
+    int n;
+    cin >> n;
+    cout << "enter the number of edges\n";
+    cout << endl;
+    int e;
+    cin >> e;
+    cout << "enter the edges\n";
+    vector<int> graph[n + 5];
+    while (e--)
     {
         int x, y;
         cin >> x >> y;
         graph[x].push_back(y);
+        graph[y].push_back(x);
     }
-    for (int i = 1; i < 9; i++)
-    {
-        dfs(i);
-    }
-    cout << endl;
+    vector<int> visited(n + 5, 0);
+    dfs(graph, n, 1, visited);
+
+    return 0;
 }
