@@ -1,0 +1,27 @@
+binary tree has children and parent 
+leaf nodes are the nodes which dont  have any children 
+
+subtrees 
+
+
+1-->full binary tree - every node has either 0 or 2 binary nodes 
+
+2-->complete binary tree - all levels should be completely filled, but if last level is not 
+                complete then all nodes of last level should be on left 
+
+3-->perfect node- all leaf nodes are at same level 
+
+4-->balanced binary tree - height can be maximum log(n)
+
+5-->  degenerate trees - all nodes should be on left(skewed trees )
+        eg 
+         1
+        /
+       2
+      / 
+     3
+     
+
+
+
+
